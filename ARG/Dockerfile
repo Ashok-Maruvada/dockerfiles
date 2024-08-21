@@ -4,5 +4,5 @@ FROM almalinux:${version:-8}
 ARG course=docker
 ARG duration=120h
 #ENV COUR=${course}
-RUN echo 'hi this is: ${course}, with: ${duration}'
-CMD [ "sleep", "60" ]
+RUN echo 'hi this is ${course}, with ${duration}'
+CMD [ "sleep", "100" ]
